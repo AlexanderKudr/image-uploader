@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Shantell+Sans&display=swap');@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+$ff-shantell: 'Shantell Sans', cursive;
+
+body {
+  background-color: rgb(160, 225, 253);
+  line-height: 1.5;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: $ff-shantell;
+}
+.app {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
