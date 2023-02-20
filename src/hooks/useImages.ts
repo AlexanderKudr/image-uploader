@@ -36,9 +36,11 @@ export const useImages = () => {
   const onDragOver = (e: DragAndDrop) => e.preventDefault();
 
   const copyToClipboard = () => {
-    navigator.clipboard.writeText(imageUrls.join("\n"));
-    setCopied(true);
-    setTimeout(() => setCopied(false), 2000);
+    if (copied === false) {
+      setCopied(true);
+      navigator.clipboard.writeText(imageUrls.join("\n"));
+      setTimeout(() => setCopied(false), 2000);
+    }
   };
 
   return {
